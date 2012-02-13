@@ -7,7 +7,7 @@ Examples
 Android:
     http://gitorious.org/irrlichtandroid/
 
-Blood & Water Effects:
+BloodAndWater:
     http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=39624
 
 Bullet:
@@ -33,7 +33,7 @@ IrrMMD:
 Kinect:
     http://irrlicht.sourceforge.net/forum/viewtopic.php?f=9&t=45730
 
-Lens Flare:
+LensFlare: by tbw
     http://irrlicht.sourceforge.net/forum/viewtopic.php?f=9&t=44728
 
 SPARK:
@@ -51,6 +51,7 @@ XEffects:
 Environment
 -----------
     Ubuntu 11.10 x86_64
-    Irrlicht 1.8.0
+    Irrlicht 1.8.0 (http://irrlicht.convextech.ca/)
     OpenGL 3.3 (Catalyst 12.1)
-
+    Code::Blocks 10.05
+    Kinect
