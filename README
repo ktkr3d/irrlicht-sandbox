@@ -48,3 +48,9 @@ XEffects:
     HLSL/GLSL Shader
 	http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=30631
 
+Environment
+-----------
+    Ubuntu 11.10 x86_64
+    Irrlicht 1.8.0
+    OpenGL 3.3 (Catalyst 12.1)
+
