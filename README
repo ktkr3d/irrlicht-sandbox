@@ -1,52 +1,86 @@
 Irrlicht Sandbox
------------------
+----------------
+    Examples from Irrlicht forum / etc.
 
 Examples
 --------
+    Anaglyph: by Luke
+        Anaglyph rendering
+        http://irrlicht.sourceforge.net/forum/viewtopic.php?t=33463
 
-Android: by ellis2323
-    http://irrlicht.sourceforge.net/forum/viewtopic.php?t=37235
+    Android: by ellis2323
+        Android port
+        http://irrlicht.sourceforge.net/forum/viewtopic.php?t=37235
 
-BloodAndWater: by Bate
-    http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=39624
+    BloodAndWater: by Bate
+        http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=39624
 
-Bullet: by Buck1000
-    Bullet Physics
-    http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=39007
+    cAudio: by wildrj
+        Play Audio
+        http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=37754
 
-cAudio: by wildrj
-    Play Audio
-    http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=37754
-	
-IrrAR: by FreakNigh
-    ARToolKit
-    http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=30000
+    CPhysics: by Buck1000
+        Bullet Physics
+        http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=39007
 
-irrCg: by Nadro
-    IrrCg is Cg Shading Language wrapper for Irrlicht Engine.
-    http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=23676
+    DesktopApp: by ktkr3d
+        Replace desktop background with an irrlicht application
+        http://ktkr3d.site11.com/2010/09/08/irrlicht/
 
-IrrMMD: by ousttrue
-    MMD(Miku Miku Dance) Model/Motion Loader
-    http://gunload.web.fc2.com/irrlicht/download.html
+    Freeflight: by randomMesh
+        http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=26526
 
-Kinect: by Tekkai
-    http://irrlicht.sourceforge.net/forum/viewtopic.php?f=9&t=45730
+    GPU-RAD: by omaremad
+        Make lightmaps using your gpu
+        http://irrlicht.sourceforge.net/forum/viewtopic.php?t=39186
 
-LensFlare: by tbw
-    http://irrlicht.sourceforge.net/forum/viewtopic.php?f=9&t=44728
+    i18n: by zgock, MadHyde, Nalin
+        http://etwas.wolfish.org/Irrlicht/irrlichtml.html
+        http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=3995
+        http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=6513
+        http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=37296
 
-SPARK: by Juff
-    Particle 
-    http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=35754
+    IrrAR: by FreakNigh
+        ARToolKit
+        http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=30000
 
-VideoMaster: by Bate
-    Play Theora Video 
-    http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=39693
+    irrCg: by Nadro
+        IrrCg is Cg Shading Language wrapper for Irrlicht Engine.
+        http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=23676
 
-XEffects: by BlindSide
-    HLSL/GLSL Shader
-    http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=30631
+    IrrMMD: by ousttrue
+        MMD(Miku Miku Dance) Model/Motion Loader
+        http://gunload.web.fc2.com/irrlicht/download.html
+
+    irrWeatherManager: by cobra
+        http://irrlicht.sourceforge.net/forum/viewtopic.php?f=6&t=39503
+
+    Kinect: by Tekkai
+        http://irrlicht.sourceforge.net/forum/viewtopic.php?f=9&t=45730
+
+    LensFlare: by tbw
+        http://irrlicht.sourceforge.net/forum/viewtopic.php?f=9&t=44728
+
+    ShieldEffect: by freetimecoder
+        http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=38544
+
+    SPARK: by Juff
+        Particle 
+        http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=35754
+
+    TerrainPager: by ikam 
+        http://irrlicht.sourceforge.net/forum/viewtopic.php?t=29356
+
+    VideoMaster: by Bate
+        Play Theora Video 
+        http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=39693
+
+    WoWCam: by ktkr3d
+        MMORPG World of Warcraft(WoW) camera animator
+
+    XEffects: by BlindSide
+        HLSL/GLSL Shader
+        http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=30631
 
 Environment
 -----------
@@ -55,3 +89,22 @@ Environment
     OpenGL 3.3 (Catalyst 12.1)
     Code::Blocks 10.05
     Kinect
+    web cam
+
+My media directory structure
+----------------------------
+    .
+    ├── bin/
+    │   └── Linux/
+    │       └── media -> ../../media
+    └── media/
+        ├── config/
+        ├── font/
+        ├── map/
+        ├── model/
+        ├── motion/
+        ├── movie/
+        ├── shader/
+        ├── skybox/
+        ├── sound/
+        └── texture/

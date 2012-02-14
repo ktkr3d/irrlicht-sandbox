@@ -1,0 +1,12 @@
+DesktopApp
+----------
+    Replace a desktop background with an irrlicht application.
+
+Requirements
+------------
+    xwinwrap
+
+Run (** YOUR COMPUTER MAY FREEZE!! **)
+--------------------------------------
+    $ xwinwrap -ni -fs -s -st -sp -b -nf -- ../../bin/Linux/DesktopApp -wid WID -fullscreen -width 1024 -height 768
+
