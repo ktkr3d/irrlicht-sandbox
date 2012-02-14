@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GPU-RAD" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Linux">
+				<Option platforms="Unix" />
+				<Option output="../../bin/Linux/$(PROJECT_NAME)" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../../bin/Linux/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-W" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+				</Compiler>
+				<Linker>
+					<Add library="Xxf86vm" />
+					<Add library="GL" />
+				</Linker>
+			</Target>
+			<Target title="Windows">
+				<Option platforms="Windows" />
+				<Option output="../../bin/Win32-gcc/$(PROJECT_NAME)" prefix_auto="0" extension_auto="1" />
+				<Option working_dir="../../bin/Win32-gcc/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add directory="../../lib/Win32-gcc" />
+				</Compiler>
+				<Linker>
+					<Add directory="../../lib/Win32-gcc/" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="Windows;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-g" />
+			<Add option="-W" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+		</Linker>
+		<Unit filename="CScreenQuad.h" />
+		<Unit filename="CShaderPre.cpp" />
+		<Unit filename="CShaderPre.h" />
+		<Unit filename="CUVTree.cpp" />
+		<Unit filename="CUVTree.h" />
+		<Unit filename="EffectCB.h" />
+		<Unit filename="EffectHandler.cpp" />
+		<Unit filename="EffectHandler.h" />
+		<Unit filename="EffectShaders.h" />
+		<Unit filename="XEffects.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="mtrand.cpp" />
+		<Unit filename="mtrand.h" />
+		<Unit filename="types.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
