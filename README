@@ -96,7 +96,7 @@ My media directory structure
     .
     ├── bin/
     │   └── Linux/
-    │       └── media -> ../../media
+    │       └── media -> ../../media/
     └── media/
         ├── config/
         ├── font/
