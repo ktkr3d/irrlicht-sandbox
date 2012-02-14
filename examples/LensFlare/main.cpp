@@ -44,16 +44,16 @@ int main()
 	// create sky box
 	driver->setTextureCreationFlag(video::ETCF_CREATE_MIP_MAPS, false);
 	scene::ISceneNode* skyboxNode = smgr->addSkyBoxSceneNode(
-		driver->getTexture("media/skybox/glacier_up.png"),
-		driver->getTexture("media/skybox/glacier_dn.png"),
-		driver->getTexture("media/skybox/glacier_lf.png"),
-		driver->getTexture("media/skybox/glacier_rt.png"),
-		driver->getTexture("media/skybox/glacier_ft.png"),
-		driver->getTexture("media/skybox/glacier_bk.png"));
+		driver->getTexture("media/skybox/hazel/glacier_up.png"),
+		driver->getTexture("media/skybox/hazel/glacier_dn.png"),
+		driver->getTexture("media/skybox/hazel/glacier_lf.png"),
+		driver->getTexture("media/skybox/hazel/glacier_rt.png"),
+		driver->getTexture("media/skybox/hazel/glacier_ft.png"),
+		driver->getTexture("media/skybox/hazel/glacier_bk.png"));
 	driver->setTextureCreationFlag(video::ETCF_CREATE_MIP_MAPS, true);
-	
+
 	// add the Quake 3 map
-	device->getFileSystem()->addFileArchive("media/map/map-20kdm2.pk3");
+	device->getFileSystem()->addFileArchive("media/map/map-20kdm2/map-20kdm2.pk3");
 
 	scene::IAnimatedMesh* mesh = smgr->getMesh("20kdm2.bsp");
 	scene::ISceneNode* node = 0;
@@ -63,28 +63,28 @@ int main()
 		node = smgr->addOctreeSceneNode(mesh->getMesh(0), 0, -1, 1024);
 
 	// because the level was not modelled around the origin (0,0,0), we
-	// translate the whole level a little bit. 
+	// translate the whole level a little bit.
 	if (node)
 		node->setPosition(core::vector3df(-1300,-144,-1249));
 
 	// create the sun node as a sphere scene node.
 	scene::IMeshSceneNode* sunMeshNode = smgr->addSphereSceneNode(1, 16, smgr->getRootSceneNode());
-	sunMeshNode->setMaterialTexture(0, driver->getTexture("media/sun/mesh.png"));
+	sunMeshNode->setMaterialTexture(0, driver->getTexture("media/texture/sun/mesh.png"));
 	sunMeshNode->setMaterialType(video::EMT_TRANSPARENT_ALPHA_CHANNEL);
 	sunMeshNode->setMaterialFlag(video::EMF_LIGHTING, false);
 	sunMeshNode->setScale(core::vector3d<f32>(600, 600, 600));
-	
+
 	// add a billboard to the sun node
 	scene::IBillboardSceneNode* sunBillboardNode = smgr->addBillboardSceneNode(sunMeshNode);
-	sunBillboardNode->setMaterialTexture(0, driver->getTexture("media/sun/sun.png"));
+	sunBillboardNode->setMaterialTexture(0, driver->getTexture("media/texture/sun/sun.png"));
 	sunBillboardNode->setMaterialType(video::EMT_TRANSPARENT_ADD_COLOR);
 	sunBillboardNode->setMaterialFlag(video::EMF_LIGHTING, false);
 	sunBillboardNode->setSize(core::dimension2d<f32>(4000, 4000));
-	
+
 	// add the lensflare to the sun
 	scene::CLensFlareSceneNode* lensFlareNode = new scene::CLensFlareSceneNode(sunMeshNode, smgr);
-	lensFlareNode->setMaterialTexture(0, driver->getTexture("media/lensflare/flare.png"));
-	
+	lensFlareNode->setMaterialTexture(0, driver->getTexture("media/texture/lensflare/flare.png"));
+
 	// create a follow camara animator for the sun
 	scene::CSceneNodeAnimatorFollowCamera* sunAnim = new scene::CSceneNodeAnimatorFollowCamera(core::vector3df(-8000, 4000, 750));
 	sunMeshNode->addAnimator(sunAnim);
@@ -105,16 +105,16 @@ int main()
 	// irr::IrrlichtDevice::ICursorControl.
 	device->getCursorControl()->setVisible(false);
 
-	// We have done everything, so lets draw it. 
+	// We have done everything, so lets draw it.
 	static u32 lastUpdate = 0;
-	
+
 	while(device->run())
 	{
 		if (device->isWindowActive())
 		{
 			// begin the scene
 			driver->beginScene(true, true, video::SColor(255,0,0,0));
-			
+
 			// render the scene as usual
 			smgr->drawAll();
 
@@ -122,7 +122,7 @@ int main()
 			driver->runAllOcclusionQueries(false);
 			driver->updateAllOcclusionQueries(false);
 			u32 occlusionQueryResult = driver->getOcclusionQueryResult(sunMeshNode);
-			
+
 			// update strength of the lensflare
 			if(occlusionQueryResult!= 0xffffffff)
 				lensFlareNode->setStrength(f32(occlusionQueryResult)/8000.f);
@@ -142,7 +142,7 @@ int main()
 				str += " OccQuery:";
 				str += occlusionQueryResult;
 				device->setWindowCaption(str.c_str());
-				
+
 				//save the last query time
 				lastUpdate = now;
 			}
