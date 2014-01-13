@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="XEffects example6" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Linux">
+				<Option platforms="Unix" />
+				<Option output="../../bin/Linux/XEffects6" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../../bin/Linux/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+				</Compiler>
+				<Linker>
+					<Add library="Xxf86vm" />
+					<Add library="GL" />
+					<Add library="cAudio.2.1.0" />
+					<Add library="freetype" />
+					<Add library="X11" />
+					<Add directory="../../lib/Linux" />
+				</Linker>
+			</Target>
+			<Target title="Windows">
+				<Option platforms="Windows" />
+				<Option output="../../bin/Win32-gcc/HelloWorld" prefix_auto="0" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add directory="../../lib/Win32-gcc" />
+				</Compiler>
+				<Linker>
+					<Add directory="../../lib/Win32-gcc/" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="Windows;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-g" />
+			<Add directory="../../include" />
+			<Add directory="irrmmd" />
+			<Add directory="irrmmd/libpolymesh" />
+			<Add directory="irrmmd/rigid" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="BulletCollision" />
+			<Add library="BulletDynamics" />
+			<Add library="BulletSoftBody" />
+			<Add library="LinearMath" />
+			<Add library="glut" />
+		</Linker>
+		<Unit filename="CGUITTFont.cpp" />
+		<Unit filename="CGUITTFont.h" />
+		<Unit filename="CScreenQuad.h" />
+		<Unit filename="CShaderPre.cpp" />
+		<Unit filename="CShaderPre.h" />
+		<Unit filename="EffectCB.h" />
+		<Unit filename="EffectHandler.cpp" />
+		<Unit filename="EffectHandler.h" />
+		<Unit filename="EffectShaders.h" />
+		<Unit filename="example6.cpp" />
+		<Unit filename="irrmmd/CAviCreator.h" />
+		<Unit filename="irrmmd/CCurve.h" />
+		<Unit filename="irrmmd/CCustomSkinnedMesh.cpp" />
+		<Unit filename="irrmmd/CCustomSkinnedMesh.h" />
+		<Unit filename="irrmmd/CJoint.cpp" />
+		<Unit filename="irrmmd/CJoint.h" />
+		<Unit filename="irrmmd/CMQOMeshFileLoader.cpp" />
+		<Unit filename="irrmmd/CMQOMeshFileLoader.h" />
+		<Unit filename="irrmmd/CPMDMeshFileLoader.cpp" />
+		<Unit filename="irrmmd/CPMDMeshFileLoader.h" />
+		<Unit filename="irrmmd/CRigidBody.cpp" />
+		<Unit filename="irrmmd/CRigidBody.h" />
+		<Unit filename="irrmmd/CSceneNodeAnimatorCameraRokuro.cpp" />
+		<Unit filename="irrmmd/CSceneNodeAnimatorCameraRokuro.h" />
+		<Unit filename="irrmmd/CShape.cpp" />
+		<Unit filename="irrmmd/CShape.h" />
+		<Unit filename="irrmmd/CVMDCustomSkinMotion.cpp" />
+		<Unit filename="irrmmd/CVMDCustomSkinMotion.h" />
+		<Unit filename="irrmmd/IJoint.h" />
+		<Unit filename="irrmmd/IRigidBody.h" />
+		<Unit filename="irrmmd/IShape.h" />
+		<Unit filename="irrmmd/SCurve.h" />
+		<Unit filename="irrmmd/SRotPosKey.h" />
+		<Unit filename="irrmmd/btjoint.cpp" />
+		<Unit filename="irrmmd/btjoint.h" />
+		<Unit filename="irrmmd/irrbullet.cpp" />
+		<Unit filename="irrmmd/irrbullet.h" />
+		<Unit filename="irrmmd/irrmmd.cpp" />
+		<Unit filename="irrmmd/irrmmd.h" />
+		<Unit filename="irrmmd/libpolymesh/bvhloader.cpp" />
+		<Unit filename="irrmmd/libpolymesh/bvhloader.h" />
+		<Unit filename="irrmmd/libpolymesh/core.h" />
+		<Unit filename="irrmmd/libpolymesh/mqoloader.cpp" />
+		<Unit filename="irrmmd/libpolymesh/mqoloader.h" />
+		<Unit filename="irrmmd/libpolymesh/pmdloader.cpp" />
+		<Unit filename="irrmmd/libpolymesh/pmdloader.h" />
+		<Unit filename="irrmmd/libpolymesh/vmdloader.cpp" />
+		<Unit filename="irrmmd/libpolymesh/vmdloader.h" />
+		<Unit filename="irrmmd/libpolymesh/xloader.cpp" />
+		<Unit filename="irrmmd/libpolymesh/xloader.h" />
+		<Unit filename="irrmmd/rigid/matrix.h" />
+		<Unit filename="irrmmd/rigid/quaternion.cpp" />
+		<Unit filename="irrmmd/rigid/quaternion.h" />
+		<Unit filename="irrmmd/rigid/rigid.cpp" />
+		<Unit filename="irrmmd/rigid/rigid.h" />
+		<Unit filename="irrmmd/rigid/rigid_test.cpp" />
+		<Unit filename="irrmmd/rigid/vec.h" />
+		<Unit filename="irrmmd/utility.cpp" />
+		<Unit filename="irrmmd/utility.h" />
+		<Unit filename="irrmmd/utility_linux.cpp" />
+		<Unit filename="irrmmd/utility_win32.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
