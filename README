@@ -48,7 +48,7 @@ Examples
         IrrCg is Cg Shading Language wrapper for Irrlicht Engine.
         http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=23676
 
-    IrrMMD: by ousttrue
+*   IrrMMD: by ousttrue (-> XEffects example)
         MMD(Miku Miku Dance) Model/Motion Loader
         http://gunload.web.fc2.com/irrlicht/download.html
 
@@ -78,18 +78,18 @@ Examples
     WoWCam: by ktkr3d
         MMORPG World of Warcraft(WoW) camera animator
 
-*   XEffects: by BlindSide
+*   XEffects: by BlindSide (include IrrMMD example)
         HLSL/GLSL Shader
         http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=30631
 
 Environment
 -----------
-    Ubuntu 11.10 x86_64
-    Irrlicht 1.8.0 (http://irrlicht.convextech.ca/)
-    OpenGL 3.3 (Catalyst 12.1)
-    Code::Blocks 10.05
-    Kinect
-    web cam
+    Ubuntu 11.10 x86_64 or later
+    Irrlicht 1.7.3 or later
+    OpenGL 3.3 (Catalyst 12.1) or later
+    Code::Blocks 10.05 or later
+    Kinect [optional]
+    web cam [optional]
 
 My media directory structure
 ----------------------------
