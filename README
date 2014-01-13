@@ -34,7 +34,7 @@ Examples
         Make lightmaps using your gpu
         http://irrlicht.sourceforge.net/forum/viewtopic.php?t=39186
 
-    i18n: by zgock, MadHyde, Nalin
+*   i18n: by zgock, MadHyde, Nalin (-> XEffects example)
         http://etwas.wolfish.org/Irrlicht/irrlichtml.html
         http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=3995
         http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=6513
@@ -78,7 +78,7 @@ Examples
     WoWCam: by ktkr3d
         MMORPG World of Warcraft(WoW) camera animator
 
-*   XEffects: by BlindSide (include IrrMMD example)
+*   XEffects: by BlindSide (include IrrMMD, i18n(irrUString.h) example)
         HLSL/GLSL Shader
         http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=30631
 
