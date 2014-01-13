@@ -3,6 +3,7 @@
 	<Workspace title="ワークスペース">
 		<Project filename="LensFlare/LensFlare.cbp" />
 		<Project filename="GPU-RAD/GPU-RAD.cbp" />
-		<Project filename="DesktopApp/DesktopApp.cbp" active="1" />
+		<Project filename="DesktopApp/DesktopApp.cbp" />
+		<Project filename="../../../home/Projects/Irrlicht/examples/XEffects/XEffects6.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>
